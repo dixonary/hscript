@@ -238,9 +238,9 @@ class Interp {
 	public function execute( expr : Expr ) : Dynamic {
 		depth = 0;
 		#if haxe3
-		locals = new Map();
+		//locals = new Map();
 		#else
-		locals = new Hash();
+		//locals = new Hash();
 		#end
 		declared = new Array();
 		return exprReturn(expr);
